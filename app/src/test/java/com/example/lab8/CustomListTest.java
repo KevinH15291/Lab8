@@ -40,7 +40,7 @@ public class CustomListTest {
         list = MockCityList();
         City yellowknife = new City("Yellowknife", "Northwest Territories");
         City charlottetown = new City("Charlottetown", "Prince Edward Island");
-        list.add(yellowknife);
+        list.addCity(yellowknife);
 
         assertEquals(true, list.hasCity(yellowknife));
         assertEquals(false, list.hasCity(charlottetown));
