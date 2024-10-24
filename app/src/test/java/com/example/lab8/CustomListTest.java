@@ -34,4 +34,15 @@ public class CustomListTest {
         list.addCity(new City("Estevan", "SK"));
         assertEquals(list.getCount(),listSize + 1);
     }
+
+    @Test
+    void testHasCity() {
+        CustomList cityList = mockCityList();
+        City yellowknife = new City("Yellowknife", "Northwest Territories");
+        City charlottetown = new City("Charlottetown", "Prince Edward Island");
+        cityList.add(yellowknife);
+
+        assertEquals(true, cityList.hasCity(yellowknife));
+        assertEquals(false, cityList.hasCity(charlottetown));
+    }
 }
