@@ -50,7 +50,7 @@ public class CustomListTest {
     void testDelete() {
         list = MockCityList();
         City yellowknife = new City("Yellowknife", "Northwest Territories");
-        list.add(yellowknife);
+        list.addCity(yellowknife);
 
         assertEquals(true, list.hasCity(yellowknife));
         list.delete(yellowknife);
