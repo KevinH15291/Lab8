@@ -37,7 +37,7 @@ public class CustomListTest {
 
     @Test
     void testHasCity() {
-        CustomList cityList = mockCityList();
+        CustomList cityList = MockCityList();
         City yellowknife = new City("Yellowknife", "Northwest Territories");
         City charlottetown = new City("Charlottetown", "Prince Edward Island");
         cityList.add(yellowknife);
