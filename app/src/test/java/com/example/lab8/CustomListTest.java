@@ -40,9 +40,9 @@ public class CustomListTest {
         list = MockCityList();
         City yellowknife = new City("Yellowknife", "Northwest Territories");
         City charlottetown = new City("Charlottetown", "Prince Edward Island");
-        cityList.add(yellowknife);
+        list.add(yellowknife);
 
-        assertEquals(true, cityList.hasCity(yellowknife));
-        assertEquals(false, cityList.hasCity(charlottetown));
+        assertEquals(true, list.hasCity(yellowknife));
+        assertEquals(false, list.hasCity(charlottetown));
     }
 }
